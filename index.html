@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12080d">
+  <title>Our Story ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="hero">
+      <div class="eyebrow">A little piece of our story</div>
+      <h1>Our Story ❤️</h1>
+      <p>Some moments are too special to be forgotten.</p>
+      <button class="primary" onclick="startStory()">Tap to begin ✨</button>
+    </section>
+
+    <section id="story" class="story hidden">
+      <div class="progress"><span id="progressBar"></span></div>
+      <div id="chapter"></div>
+      <div class="controls">
+        <button id="prevBtn" class="secondary" onclick="prevChapter()">← Back</button>
+        <button id="nextBtn" class="primary" onclick="nextChapter()">Next chapter →</button>
+      </div>
+    </section>
+
+    <section class="ending hidden" id="ending">
+      <div class="card">
+        <div class="eyebrow">And the story continues…</div>
+        <h2>Waiting For December 🥹❤️</h2>
+        <p>So many memories behind us… and finally, our first meeting ahead.</p>
+        <div class="memory-grid">
+          <div class="memory-placeholder">December memory<br><small>Add photo here</small></div>
+          <div class="memory-placeholder">December memory<br><small>Add photo here</small></div>
+          <div class="memory-placeholder">December memory<br><small>Add photo here</small></div>
+        </div>
+        <p class="closing">Until we meet for the first time, these memories are what keep us close. ❤️</p>
+
+        <div class="final-note">
+          <div class="note-heart">♡</div>
+          <div class="eyebrow">A little note from the heart</div>
+          <h3>For You, Always ❤️</h3>
+          <p>
+            Agar is poori story ko ek line mein likhna ho, toh shayad itna hi kahungi —
+            <b>tum meri favourite memory bhi ho aur meri favourite wait bhi.</b> 🥹❤️
+          </p>
+          <p>
+            21 September se lekar aaj tak, humne sirf happy moments nahi dekhe…
+            kuch difficult days bhi aaye, kuch khamoshiyan bhi rahi, aur bahut saare
+            faasle bhi. Lekin har baar ek cheez same rahi — <b>care, feelings aur ek-doosre
+            ko miss karna.</b>
+          </p>
+          <p>
+            Ab December ka intezaar hai… us din ka jab itni saari calls aur memories ke
+            baad pehli baar saamne milenge. ✨
+          </p>
+          <p class="note-last">
+            Thank you for being a beautiful part of this story. ❤️<br>
+            <span>Some stories are worth waiting for… and this one is. 🥹</span>
+          </p>
+        </div>
+
+        <button class="secondary" onclick="restartStory()">Read it again ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
